@@ -1,10 +1,16 @@
+html {
+	background-color: #efefef;
+	color: #393939;
+}
+
 .header {
-  background-color: #e3e3e3;
+  background-color: #fff;
+  padding-top: 12px;
+	padding-bottom: 12px;
 }
 
 .header__logo {
 	text-align: center;
-	/*background-color: #F5F7FA*/;
 	height: 40px;
 }
 
@@ -20,7 +26,7 @@
 }
 
 .header__contact {
-
+  text-align: center;
 }
 
 .header__contact-info {
@@ -29,22 +35,89 @@
 	margin-bottom: 0px;
 }
 
-/*.header__contact-info--phone {
-  background-color: #8DC63F;
+.header__contact-info--phone {
+  background-color: #009444;
   padding: 5px;
-  width: 240px;
+  width: 200px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 5px;
   color: #fff;
-}*/
+}
+
+.header__contact-info--email {
+  display: none;
+}
 
 @media only screen and (min-width: 33.75em) {  /* 540px */
-  .header__logo {
+	.header {
+	}
+
+  .header__contact-info--phone {
+    background-color: inherit;
+    padding: 0;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: none;
+    color: #393939;
+  }
+
+  .header__contact-info--email {
+    display: block;
+  }
+
+	.nav__link a {
+		padding: 14px 16px;
+  }
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+	.header__logo {
     text-align: left;
   }
 
   .header__contact-info {
 	  text-align: right;
   }
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.nav {
+  text-align: center;
+}
+
+.nav__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e3e3e3;
+}
+
+.nav__link {
+	display: inline-block;
+}
+
+.nav__link a {
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding: 8px 16px;
+	text-transform: uppercase;
+}
+
+.nav__link a:hover,
+.nav__link a:focus
+ {
+	color: #fff;
+	background-color: #8DC63F;
+}
+
+.nav__link a:active
+ {
+	color: #fff;
+	background-color: red;
 }
