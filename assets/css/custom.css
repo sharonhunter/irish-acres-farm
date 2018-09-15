@@ -3,14 +3,20 @@
 }
 
 html {
-	background-color: #f5f5f5;
 	color: #393939;
 	-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+	background-color: #f7f7f7;
+}
+
+.container {
+	background-color: #fff;
+}
+
 .header {
-  background-color: #fff;
   padding-top: 12px;
 	padding-bottom: 12px;
 }
@@ -46,28 +52,19 @@ html {
   display: none;
 }
 
-/*.content-spacer--top {
+.cta--flush-bottom {
   margin-top: 30px;
 }
 
-.content-spacer--bottom {
-  margin-bottom: 30px;
-}*/
-
 .cta-mobile {
 	background-color: #3D8B37;
-	/*background-color: #8FBC8F;*/
-	/*background-color: #698B69;*/
-	/*background-color: #548B54;*/
-
 	padding-left: 30px;
 	padding-right: 30px;
 }
 
 .cta-mobile-button {
-	background-color: #fff;
 	padding-top: 25px;
-	padding-bottom: 15px;
+	padding-bottom: 25px;
   text-align: center;
 }
 
@@ -81,9 +78,6 @@ html {
 }
 
 .cta__phone-link {
-  /*background-color: #C0D9D9;*/
-  /*background-color: #93DB70;*/
-  /*background-color: #B9DE8B;*/
   background-color: #A8D397;
 
   display: inline-block;
@@ -106,8 +100,8 @@ html {
   box-sizing: border-box;
   padding-top: 6px;
   padding-bottom: 6px;
-  /*background-color: #e3e3e3;*/
-  background-color: #e5e5e5;
+  background-color: #e3e3e3;
+  /*background-color: #E4F6E2;*/
 }
 
 .nav__list {
@@ -160,13 +154,6 @@ html {
 	padding-bottom: 15px;
 	padding-left: 30px;
 	padding-right: 30px;
-	background-color: #fff;
-}
-
-/*consider making this a utility class?*/
-.content-section--condensed {
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 .content-section__heading {
@@ -196,9 +183,19 @@ html {
 	float: right;
 }
 
-/*quote styles*/
+/* quote */
 .quote {
 	text-align: center;
+	/*font-size: 1.3rem;
+	font-weight: bold;*/
+	background-color: #dedede;
+	background-color: #e8e8e8;
+	background-color: #A8D397;
+	background-color: #D8EFD3;
+	background-color: #E4F6E2;
+}
+
+.quote__text {
 	font-size: 1.3rem;
 	font-weight: bold;
 }
@@ -208,10 +205,20 @@ html {
 	font-style: italic;
 }
 
+.second-quote {
+	margin-top: 20px;
+}
+
 .back-to-top {
 	text-align: center;
 }
 
+.back-to-top__text {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* footer */
 .footer {
 	background-color: #426F42	;
 }
