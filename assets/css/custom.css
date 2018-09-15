@@ -124,21 +124,14 @@ body {
 }
 
 .nav__link a:hover,
-.nav__link a:focus
- {
-	color: #fff;
-	/*color: #393939;*/
-	background-color: #8DC63F;
-	background-color: #B9DE8B;
-	/*background-color: #C0D9D9;*/
-	background-color: #A8D397;
-	background-color: #5F755E;
+.nav__link a:focus {
+	color: #3D8B37;
+	text-decoration: underline;
+	/*background-color: #5F755E*/;
 }
 
-.nav__link a:active
- {
-	color: #fff;
-	background-color: red;
+.nav__link a:active {
+	color: #25531F;
 }
 
 .cta__text {
@@ -216,6 +209,8 @@ body {
 .back-to-top__text {
 	margin-top: 10px;
 	margin-bottom: 10px;
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 /* footer */
