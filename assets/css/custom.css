@@ -179,8 +179,6 @@ body {
 /* quote */
 .quote {
 	text-align: center;
-	/*font-size: 1.3rem;
-	font-weight: bold;*/
 	margin-top: 25px;
 	background-color: #E4F6E2;
 }
@@ -197,6 +195,16 @@ body {
 .quote-author {
 	text-align: center;
 	font-style: italic;
+}
+
+.content-attribution {
+	font-style: italic;
+	text-align: right;
+	color: #426F42;
+}
+
+.book-title--italic {
+  font-style: italic;
 }
 
 .back-to-top {
@@ -303,7 +311,6 @@ body {
   	margin-bottom: 20px;
   }
 
-  
   .staggered-content__image {
 	  height: auto;
 	  display: inline-block;
